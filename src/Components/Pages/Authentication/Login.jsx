@@ -52,9 +52,9 @@ const Login = () => {
            <div className="hero min-h-screen bg-purple-200">
            <div className="hero-content  w-full px-24">
              
-             <div className="card shadow-2xl bg-base-100  w-1/2 ">
+             <div className="card shadow-2xl bg-base-200  w-1/2 ">
                <form onSubmit={loginHandle} className="card-body p-14">
-                 <h3 className='text-2xl font-bold text-center p-1'>Sign In Please</h3>
+                 <h3 className='text-2xl font-bold text-center p-1'>Sign In </h3>
                  <div className="form-control">
                    <label className="label font-bold">
                      <span className="label-text">Email</span>
