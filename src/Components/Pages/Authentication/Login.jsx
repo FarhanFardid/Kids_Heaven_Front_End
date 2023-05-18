@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import google from '../../../assets/Icons/google Icon.png'
 import authImg from '../../../assets/auth image/login-2.png'
-import authImg2 from '../../../assets/auth image/login-logo.png'
+
 
 const Login = () => {
     // const location = useLocation();
@@ -39,7 +39,7 @@ const Login = () => {
      
     return (
         <>
-        <div className="hero h-[250px]" style={{ backgroundImage: `url('${authImg}')` }}>
+        <div className="hero h-[150px]" style={{ backgroundImage: `url('${authImg}')` }}>
   <div className="hero-overlay bg-opacity-70"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
@@ -49,30 +49,27 @@ const Login = () => {
   </div>
 </div>
 
-           <div className="hero min-h-screen bg-base-200">
-           <div className="hero-content flex-col items-center justify-center lg:flex-row ">
-             <div className="mx-auto p-3 w-full">
-                 <img src={authImg2} alt="login img" className='w-full h-full' />
-          
-             </div>
-             <div className="card  w-72  shadow-2xl bg-base-100 mx-auto  ml-3 ">
-               <form onSubmit={loginHandle} className="card-body">
-                 <h3 className='text-2xl font-bold text-center p-3'>Sign In Please</h3>
+           <div className="hero min-h-screen bg-purple-200">
+           <div className="hero-content  w-full px-24">
+             
+             <div className="card shadow-2xl bg-base-100  w-1/2 ">
+               <form onSubmit={loginHandle} className="card-body p-14">
+                 <h3 className='text-2xl font-bold text-center p-1'>Sign In Please</h3>
                  <div className="form-control">
-                   <label className="label">
+                   <label className="label font-bold">
                      <span className="label-text">Email</span>
                    </label>
                    <input type="text" placeholder="your email" name="email" className="input input-bordered w-full" required/>
                  </div>
                  <div className="form-control">
-                   <label className="label">
+                   <label className="label font-bold">
                      <span className="label-text">Password</span>
                    </label>
                    <input type="password" placeholder="your password" name="password" className="input input-bordered" required />
                   
                  </div>
                  <div className="form-control mt-6">
-                   <input  type="submit" className="btn bg-orange-600" value="Sign In"></input>
+                   <input  type="submit" className="btn bg-red-700" value="Sign In"></input>
               
                  </div>
                </form>
