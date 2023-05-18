@@ -88,7 +88,7 @@ const Navigation = () => {
               <div className="navbar-end">
          {
                 user? <Link ><button className="btn bg-red-700" onClick={handleLogout}>Logout</button></Link> :
-                <Link to="/"><button className="btn bg-red-700 hover:bg-blue-700" >Login</button></Link>
+                <Link to="/login"><button className="btn bg-red-700 hover:bg-blue-700" >Login</button></Link>
                }
               
               </div>
