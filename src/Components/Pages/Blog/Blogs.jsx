@@ -20,7 +20,7 @@ const Blogs = () => {
             a credential that represents the authorization granted to a user. It
             is usually issued by an authentication server or an identity
             provider after the user successfully authenticates. The access token
-            is typically short-lived and contains information such as the user's
+            is typically short-lived and contains information such as the user`s
             identity and the permissions they have.<br></br>
           </p>
 
@@ -40,10 +40,10 @@ const Blogs = () => {
             Access tokens should be stored securely on the client-side to
             prevent unauthorized access.<br></br>
             1. Web Applications: Access tokens are often stored in browser
-            cookies with the "httpOnly" flag set. <br></br>
+            cookies with the httpOnly flag set. <br></br>
             2. Single-Page Applications (SPAs): Access tokens are commonly
             stored in browser memory (JavaScript variables) or in a specialized
-            storage mechanism like the browser's Web Storage API (localStorage
+            storage mechanism like the browser`s Web Storage API (localStorage
             or sessionStorage).
           </p>
         </p>
@@ -122,7 +122,7 @@ const Blogs = () => {
         </p>
         <p className=" p-2 space-y-2">
           <p>
-            MongoDB's aggregate function is a powerful tool for performing
+            MongoDB`s aggregate function is a powerful tool for performing
             advanced data analysis and manipulation operations on data stored in
             a MongoDB database. It allows us to process data from multiple
             documents in a collection and apply various operations to transform
