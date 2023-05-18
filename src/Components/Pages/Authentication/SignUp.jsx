@@ -42,7 +42,7 @@ const SignUp = () => {
   </div>
 </div>
 
-           <div className="hero min-h-screen bg-purple-200">
+           <div className="hero min-h-screen bg-purple-200 p-3">
            <div className="hero-content  w-full px-24">
              
              <div className="card shadow-2xl bg-base-200  w-1/2 ">
