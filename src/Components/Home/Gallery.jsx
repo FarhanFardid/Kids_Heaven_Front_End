@@ -21,37 +21,37 @@ const Gallery = () => {
 </div>
 <div className="card  shadow-lg">
   <figure className=" pt-5">
-    <img src={galImg2} alt="unicorn" className="rounded-xl w-72 h-72" />
+    <img src={galImg2} alt="gallery img" className="rounded-xl w-72 h-72" />
   </figure>
 </div>
 <div className="card  shadow-lg">
   <figure className=" pt-5">
-    <img src={galImg6} alt="unicorn" className="rounded-xl w-72 h-72" />
+    <img src={galImg6} alt="gallery img" className="rounded-xl w-72 h-72" />
   </figure>
 </div>
 <div className="card  shadow-lg">
   <figure className=" pt-5">
-    <img src={galImg5} alt="unicorn" className="rounded-xl w-72 h-72" />
+    <img src={galImg5} alt="gallery img" className="rounded-xl w-72 h-72" />
   </figure>
 </div>
 <div className="card  shadow-lg">
   <figure className=" pt-5">
-    <img src={galImg3} alt="unicorn" className="rounded-xl w-72 h-72" />
+    <img src={galImg3} alt="gallery img" className="rounded-xl w-72 h-72" />
   </figure>
 </div>
 <div className="card  shadow-lg">
   <figure className=" pt-5">
-    <img src={galImg4} alt="unicorn" className="rounded-xl w-72 h-72" />
+    <img src={galImg4} alt="gallery img" className="rounded-xl w-72 h-72" />
   </figure>
 </div>
 <div className="card  shadow-lg">
   <figure className=" pt-5">
-    <img src={uni1} alt="unicorn" className="rounded-xl w-72 h-72" />
+    <img src={uni1} alt="gallery img" className="rounded-xl w-72 h-72" />
   </figure>
 </div>
 <div className="card  shadow-lg">
   <figure className=" pt-5">
-    <img src={galImg1} alt="unicorn" className="rounded-xl w-72 h-72" />
+    <img src={galImg1} alt="gallery img" className="rounded-xl w-72 h-72" />
   </figure>
 </div>
         </div></div>
