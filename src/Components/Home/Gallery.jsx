@@ -10,48 +10,48 @@ import galImg6 from '../../assets/animals/Gallary/galary-3.png'
 
 const Gallery = () => {
     return (
-        <div className='bg-[#b9b7cd] p-4'>
-        <h3 className='text-4xl font-bold text-center text-purple-800 p-3'>Toy Gallery</h3>
-        <p className='text-lg text-center p-2 text-blue-800 font-medium'>Let the Adventure Begin! Find the Perfect Toys for Every Child</p>
-           <div className='grid grid-cols-4 gap-2'>
+        <div className='bg-[#b9b7cd] md:p-4 p-1'>
+        <h3 className='md:text-4xl text-lg font-bold text-center text-purple-800 md:p-3 p-1'>Toy Gallery</h3>
+        <p className='md:text-lg text-xs text-center md:p-2 p-1 text-blue-800 font-medium '>Let the Adventure Begin! Find the Perfect Toys for Every Child</p>
+           <div className='grid md:grid-cols-4 md:gap-2 grid-cols-2 gap-2'>
             <div className="card  ">
-  <figure className=" pt-5">
-    <img src={uni2} alt="unicorn" className="rounded-xl w-72 h-72" />
+  <figure className=" md:pt-5 pt-2">
+    <img src={uni2} alt="unicorn" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
-<div className="card  shadow-lg">
-  <figure className=" pt-5">
-    <img src={galImg2} alt="gallery img" className="rounded-xl w-72 h-72" />
+<div className="card ">
+  <figure className="  md:pt-5 pt-2">
+    <img src={galImg2} alt="gallery img" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
-<div className="card  shadow-lg">
-  <figure className=" pt-5">
-    <img src={galImg6} alt="gallery img" className="rounded-xl w-72 h-72" />
+<div className="card  ">
+  <figure className="  md:pt-5 pt-2">
+    <img src={galImg6} alt="gallery img" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
-<div className="card  shadow-lg">
-  <figure className=" pt-5">
-    <img src={galImg5} alt="gallery img" className="rounded-xl w-72 h-72" />
+<div className="card  ">
+  <figure className="  md:pt-5 pt-2">
+    <img src={galImg5} alt="gallery img" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
-<div className="card  shadow-lg">
-  <figure className=" pt-5">
-    <img src={galImg3} alt="gallery img" className="rounded-xl w-72 h-72" />
+<div className="card  ">
+  <figure className="  md:pt-5 pt-2">
+    <img src={galImg3} alt="gallery img" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
-<div className="card  shadow-lg">
-  <figure className=" pt-5">
-    <img src={galImg4} alt="gallery img" className="rounded-xl w-72 h-72" />
+<div className="card  ">
+  <figure className="  md:pt-5 pt-2">
+    <img src={galImg4} alt="gallery img" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
-<div className="card  shadow-lg">
-  <figure className=" pt-5">
-    <img src={uni1} alt="gallery img" className="rounded-xl w-72 h-72" />
+<div className="card  ">
+  <figure className="  md:pt-5 pt-2">
+    <img src={uni1} alt="gallery img" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
-<div className="card  shadow-lg">
-  <figure className=" pt-5">
-    <img src={galImg1} alt="gallery img" className="rounded-xl w-72 h-72" />
+<div className="card  ">
+  <figure className="  md:pt-5 pt-2">
+    <img src={galImg1} alt="gallery img" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
   </figure>
 </div>
         </div></div>
