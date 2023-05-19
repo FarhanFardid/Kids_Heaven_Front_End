@@ -10,10 +10,10 @@ import galImg6 from '../../assets/animals/Gallary/galary-3.png'
 
 const Gallery = () => {
     return (
-        <div className='bg-[#b9b7cd] md:p-4 p-1'>
+        <div className='bg-[#b9b7cd] md:p-5 p-2'>
         <h3 className='md:text-4xl text-lg font-bold text-center text-purple-800 md:p-3 p-1'>Toy Gallery</h3>
         <p className='md:text-lg text-xs text-center md:p-2 p-1 text-blue-800 font-medium '>Let the Adventure Begin! Find the Perfect Toys for Every Child</p>
-           <div className='grid md:grid-cols-4 md:gap-2 grid-cols-2 gap-2'>
+           <div className='grid md:grid-cols-4 md:gap-3 grid-cols-2 gap-2'>
             <div className="card  ">
   <figure className=" md:pt-5 pt-2">
     <img src={uni2} alt="unicorn" className="md:rounded-xl rounded-md md:w-72 md:h-72 w-48 h-48" />
