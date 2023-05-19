@@ -3,6 +3,7 @@ import logo from '../../assets/Logo/kid_logo-1.png'
 import { useContext } from 'react';
 import { AuthContext } from '../Providers/AuthProvider';
 import { toast } from 'react-toastify';
+import Tooltip from '@mui/material/Tooltip';
 
 const Navigation = () => {
   const {user,logOut} = useContext(AuthContext);
@@ -92,7 +93,9 @@ const Navigation = () => {
               </div>
               <div className="navbar-end">
          {
-                user? <><img src={user?.photoURL} alt="User profile" className='w-12 h-12 rounded-full mr-3' /> <Link ><button className="btn bg-red-700" onClick={handleLogout}>Logout</button></Link> </>:
+                user? <>    <Tooltip title={user?.displayName}>
+                <img src={user?.photoURL} alt="User profile" className='w-12 h-12 rounded-full mr-3' />
+              </Tooltip> <Link ><button className="btn bg-red-700" onClick={handleLogout}>Logout</button></Link> </>:
                 <Link to="/login"><button className="btn bg-red-700 hover:bg-blue-700" >Login</button></Link>
                }
               
