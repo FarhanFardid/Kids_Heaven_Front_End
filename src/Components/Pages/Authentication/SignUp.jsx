@@ -1,34 +1,41 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import google from '../../../assets/Icons/google Icon.png'
 import authImg from '../../../assets/auth image/login-logo.png'
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 
 const SignUp = () => {
+  const [success,setSuccess] = useState(" ");
+  const[error,setError] = useState(" ");
+  const navigate= useNavigate();
+  const {createUser,updateUser,googleSign} = useContext(AuthContext);
     const signUpHandle = event =>{
         event.preventDefault();
         const form = event.target;
         const name= form.name.value;
         const email= form.email.value;
+        const photo = form.photo.value;
         const password = form.password.value;
-        console.log(name,email,password);
+        console.log(name,email,photo,password);
     
-    //     createUser(email,password)
-    //     .then(res => {
-    //       const signedUser = res.user;
-    //       userUpdate(signedUser,name)
-    //       console.log(signedUser);
-    //       form.reset()
-    //       navigate('/login')
-    //   })
-    //   .catch(error=>console.log(error))
+        createUser(email,password)
+        .then(res => {
+          const signedUser = res.user;
+          updateUser(signedUser,name,photo)
+          console.log(signedUser);
+          form.reset()
+          navigate('/login')
+      })
+      .catch(error=>console.log(error))
     }
     const googleHandle=()=>{
-    //   googleUser()
-    //   .then(res=>{
-    //     const signedUser = res.user;
-    //     console.log(signedUser);
-    //     navigate('/')
-    //   })
+      googleSign()
+      .then(res=>{
+        const signedUser = res.user;
+        console.log(signedUser);
+        navigate('/')
+      })
     }
     return (
         <>
