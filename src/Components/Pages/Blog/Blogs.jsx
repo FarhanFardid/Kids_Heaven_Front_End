@@ -1,6 +1,6 @@
 const Blogs = () => {
   return (
-    <div className="bg-slate-100">
+    <div className="bg-violet-200">
       <h2 className="text-3xl font-bold text-center p-3"> Blogs </h2>
       <article className="p-3 mt-2">
         <p className=" font-bold text-xl p-2">

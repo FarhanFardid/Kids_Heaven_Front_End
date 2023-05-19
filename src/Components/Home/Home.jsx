@@ -1,5 +1,7 @@
 import AboutUs from "./AboutUs";
+
 import Gallery from "./Gallery";
+import Review from "./Review";
 import Slider from "./Slider";
 
 
@@ -9,6 +11,8 @@ const Home = () => {
             <Slider></Slider>
             <Gallery></Gallery>
             <AboutUs></AboutUs>
+            <Review></Review>
+            
         </div>
     );
 };
