@@ -48,7 +48,7 @@ const AuthProvider = ({children}) => {
         return ()=>{
             unsubscribe();
         }
-     },[])
+     },[auth])
 
     //  pass the functions and variables to other components
     const authInfo ={
