@@ -1,13 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
 import google from '../../../assets/Icons/google Icon.png'
 import authImg from '../../../assets/auth image/login-logo.png'
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const SignUp = () => {
-  const [success,setSuccess] = useState(" ");
-  const[error,setError] = useState(" ");
+ 
+  
   const navigate= useNavigate();
   const {createUser,updateUser,googleSign} = useContext(AuthContext);
     const signUpHandle = event =>{
@@ -24,18 +26,25 @@ const SignUp = () => {
           const signedUser = res.user;
           updateUser(signedUser,name,photo)
           console.log(signedUser);
+          toast.success("Successfully Signed Up")
           form.reset()
           navigate('/login')
       })
-      .catch(error=>console.log(error))
+      .catch(err=>{console.log(err)
+       
+      toast.error('Sign Up Unsuccessful')})
     }
     const googleHandle=()=>{
       googleSign()
       .then(res=>{
         const signedUser = res.user;
         console.log(signedUser);
+        toast.success("Successfully Signed Up")
         navigate('/')
       })
+      .catch(err=>{console.log(err)
+        
+        toast.error('Sign Up Unsuccessful')})
     }
     return (
         <>
@@ -97,7 +106,9 @@ const SignUp = () => {
              
              </div>
            </div>
-         </div></>
+         </div>
+         
+         </>
     );
 };
 

@@ -1,40 +1,48 @@
 // import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import google from '../../../assets/Icons/google Icon.png'
 import authImg from '../../../assets/auth image/login-2.png'
+import { useContext } from 'react';
+import { AuthContext } from '../../Providers/AuthProvider';
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
-    // const location = useLocation();
-    // const navigate = useNavigate();
-    // const from = location.state?.from?.pathname || '/'
+  const {googleSign,signInUser} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || '/'
     const loginHandle = event =>{
       event.preventDefault();
       const form = event.target;
       const email= form.email.value;
       const password = form.password.value;
       console.log(email,password);
-    //   loginUser(email,password)
-    //   .then(res=>{
-    //     const loggedUser = res.user;
-    //     console.log(loggedUser);
-    //     form.reset();
-    //     navigate(from, {replace:true})
+      signInUser(email,password)
+      .then(res=>{
+        const loggedUser = res.user;
+        console.log(loggedUser);
+        toast.success("Successfully Logged In")
+        form.reset();
+        navigate(from, {replace:true})
   
-    //   })
-    //   .catch(error=>{
-    //     console.log(error);
-    //   })
+      })
+      .catch(error=>{
+        console.log(error);
+        toast.error("Login Failed")
+      })
   
     }
     
     const googleHandle=()=>{
-    //   googleUser()
-    //   .then(res=>{
-    //     const loggedUser = res.user;
-    //     console.log(loggedUser);
-    //   })
-    //   .catch(error=>{console.log(error)})
+      googleSign()
+      .then(res=>{
+        const loggedUser = res.user;
+        toast.success("Successfully Logged In")
+        console.log(loggedUser);
+      })
+      .catch(error=>{console.log(error)
+        toast.error("Login Failed")})
     }
      
     return (
