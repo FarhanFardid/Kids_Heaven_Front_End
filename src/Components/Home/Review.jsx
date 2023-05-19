@@ -7,8 +7,8 @@ import { FaAngleDown } from "react-icons/fa";
 const Review = () => {
     return (
         <div className='bg-slate-300'>
-          <h3 className='text-4xl text-center font-bold text-red-700 py-4'>Frequently Asked Questions (FAQ)</h3>
-          <div className='p-16 '>
+          <h3 className='md:text-4xl text-lg text-center font-bold text-red-700 md:pt-6 pt-1'>Frequently Asked Questions (FAQ)</h3>
+          <div className='md:p-24 p-4 '>
           <Accordion >
           <AccordionSummary
             expandIcon={<FaAngleDown />}
