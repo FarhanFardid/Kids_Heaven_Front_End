@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import google from '../../../assets/Icons/google Icon.png'
-import authImg from '../../../assets/auth image/login-logo.png'
+
+import signImg from '../../../assets/animals/Banner/banner-6.png'
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from 'react-toastify';
@@ -48,11 +49,11 @@ const SignUp = () => {
     }
     return (
         <>
-        <div className="hero h-[150px]" style={{ backgroundImage: `url('${authImg}')` }}>
-  <div className="hero-overlay bg-opacity-70"></div>
+        <div className="hero h-[300px]" style={{ backgroundImage: `url('${signImg}')` }}>
+  <div className="hero-overlay bg-opacity-50"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <h1 className="mb-5 text-4xl font-bold">Please Register</h1>
+      <h1 className="mb-5 text-4xl font-bold text-slate-950">Please Register</h1>
     
     </div>
   </div>
