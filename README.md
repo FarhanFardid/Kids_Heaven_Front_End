@@ -1,9 +1,13 @@
 #### Toy MarketPlace Assignment
 #### Kids Heaven website
 
-### Private Repo Link: [https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-FarhanFardid]
 
-### Live Site Link: []
+### Client Side Private Repo Link: [https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-FarhanFardid]
+
+### Server Side Private Repo Link: [https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-server-side-FarhanFardid]
+
+### Live Server Link: [https://kids-heaven-server.vercel.app/toys]
+### Live Site Link: [https://kids-heaven-client.web.app/]
 
 ### "*"  Kids Toy website for a specific Toy category 
 
