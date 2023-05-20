@@ -1,12 +1,20 @@
 import { useLoaderData } from "react-router-dom";
 import ToyRows from "./ToyRows";
 import useTitle from "../Hooks/useTitle";
+import { useState } from "react";
 
 
 const AllToys = () => {
   useTitle("All Toy")
-    const storedToys = useLoaderData();
+    const loadedToys = useLoaderData();
+    const [storedToys,setStoredToys] = useState(loadedToys)
     console.log(storedToys);
+    // limiting the data to show only 20 items
+    if(storedToys.length > 20){
+    const limitedToys = storedToys.slice(0,20);
+    setStoredToys(limitedToys)
+    }
+
     return (
         <div className="bg-violet-300">
           <div className="text-center">  <h3 className="text-4xl text-center font-bold text-yellow-700 p-3">All Available Toys </h3><input type="text" placeholder="Search Toy Name " className="input input-bordered w-full max-w-xs my-3 " /></div>

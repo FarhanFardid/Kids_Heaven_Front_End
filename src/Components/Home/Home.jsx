@@ -1,5 +1,6 @@
 import useTitle from "../Hooks/useTitle";
 import AboutUs from "./AboutUs";
+import CategoryTab from "./CategoryTab";
 
 import Gallery from "./Gallery";
 import Review from "./Review";
@@ -12,6 +13,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <Gallery></Gallery>
+            <CategoryTab></CategoryTab>
             <AboutUs></AboutUs>
             <Review></Review>
             
