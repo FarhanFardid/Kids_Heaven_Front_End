@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path:'allToy',
         element:<AllToys></AllToys>,
-        loader: ()=> fetch('http://localhost:5000/toys')
+        loader: ()=> fetch('https://kids-heaven-server.vercel.app/toys')
       },
       {
         path:'addToy',
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       {
         path:'updateToy/:id',
         element:<PrivateRoute><UpdateToy></UpdateToy></PrivateRoute>,
-        loader: ({params})=> fetch(`http://localhost:5000/toys/${params.id}`)
+        loader: ({params})=> fetch(`https://kids-heaven-server.vercel.app/toys/${params.id}`)
       },
       {
         path:'myToy',
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       {
        path: 'toyDetails/:id',
        element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-       loader: ({params})=> fetch(`http://localhost:5000/toys/${params.id}`)
+       loader: ({params})=> fetch(`https://kids-heaven-server.vercel.app/toys/${params.id}`)
       }
       
     ]

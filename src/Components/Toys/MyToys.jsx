@@ -23,7 +23,7 @@ const handleDelete = (id) =>{
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-  fetch(`http://localhost:5000/toys/${id}`, {
+  fetch(`https://kids-heaven-server.vercel.app/toys/${id}`, {
   
       method:"DELETE",
    
@@ -43,7 +43,7 @@ const handleDelete = (id) =>{
 }})
 
  }
-    const uri = `http://localhost:5000/toys?sellerEmail=${user?.email}`
+    const uri = `https://kids-heaven-server.vercel.app/toys?sellerEmail=${user?.email}`
   useEffect(()=>{
     fetch(uri)
     .then (res=> res.json())

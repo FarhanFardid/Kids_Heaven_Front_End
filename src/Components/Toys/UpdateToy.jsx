@@ -16,7 +16,7 @@ const UpdateToy = () => {
         const details = form.details.value;
         const upToy={toyName,price,quantity,details}
         console.log(upToy);
-        fetch(`http://localhost:5000/toys/${_id}`,{
+        fetch(`https://kids-heaven-server.vercel.app/toys/${_id}`,{
             method: "PATCH",
             headers:{
                 "content-type" : "application/json"

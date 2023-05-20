@@ -22,7 +22,7 @@ const AddToys = () => {
         const details = form.details.value;
         const addToy = {sellerName,sellerEmail,toyName,image,subCategory,price,quantity,details};
         console.log(addToy)
-         fetch('http://localhost:5000/toys', {
+         fetch('https://kids-heaven-server.vercel.app/toys', {
             method: 'POST',
             headers:{
                 'content-type': "application/json"
