@@ -11,6 +11,7 @@ import SignUp from './Components/Pages/Authentication/SignUp'
 import Blogs from './Components/Pages/Blog/Blogs'
 import AuthProvider from './Components/Providers/AuthProvider'
 import PrivateRoute from './Components/Providers/PrivateRoute'
+import AddToys from './Components/Toys/AddToys'
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:'blogs',
         element:<PrivateRoute><Blogs></Blogs></PrivateRoute>
+      },
+      {
+        path:'addToy',
+        element:<AddToys></AddToys>
       }
     ]
 
