@@ -31,9 +31,7 @@ const MyToyRows = ({toy,handleDelete}) => {
         </th>
         <th>
           <label>
-          <button className="btn btn-circle btn-sm bg-green-700"><FaArrowCircleUp className="h-6 w-6"/>
-  
-</button>
+         <Link to={`/updateToy/${_id}`}> <button className="btn btn-circle btn-sm bg-green-700"><FaArrowCircleUp className="h-6 w-6"/></button></Link>
           </label>
         </th>
         <th>

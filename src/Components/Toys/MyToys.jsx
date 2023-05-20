@@ -7,6 +7,7 @@ import Swal from 'sweetalert2'
 const MyToys = () => {
 const {user} = useContext(AuthContext);
 const[toys,setToys] = useState([]);
+
 const handleDelete = (id) =>{
   console.log(id)
 
@@ -73,7 +74,10 @@ const handleDelete = (id) =>{
 </thead>
 <tbody>
   {
-    toys.map(toy=> <MyToyRows key={toy._id} toy={toy} handleDelete={handleDelete}></MyToyRows>)
+    toys.map(toy=> <MyToyRows key={toy._id}
+       toy={toy}
+        handleDelete={handleDelete}
+        ></MyToyRows>)
   }
 
 
