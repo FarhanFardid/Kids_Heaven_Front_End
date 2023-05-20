@@ -78,7 +78,7 @@ const Navigation = () => {
                      
                     </li>
                     <li>
-                    <Link to='/'>  All Toys </Link>
+                    <Link to='/allToy'>  All Toys </Link>
                      
                     </li>
         
