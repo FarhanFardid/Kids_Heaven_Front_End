@@ -1,10 +1,10 @@
 import { useLoaderData } from "react-router-dom";
-
+import Swal from "sweetalert2";
 
 const UpdateToy = () => {
     const toyInfo =useLoaderData();
     console.log(toyInfo);
-    const {toyName,price,quantity,details} = toyInfo;
+    const {_id,toyName,price,quantity,details} = toyInfo;
     const handleUpdateToy = event =>{
         event.preventDefault()
         const form = event.target;
@@ -14,6 +14,28 @@ const UpdateToy = () => {
         const details = form.details.value;
         const upToy={toyName,price,quantity,details}
         console.log(upToy);
+        fetch(`http://localhost:5000/toys/${_id}`,{
+            method: "PATCH",
+            headers:{
+                "content-type" : "application/json"
+            }, 
+            body:JSON.stringify(upToy)
+        })
+        .then (res=> res.json())
+        .then(data =>{
+            console.log(data)
+            if(data.modifiedCount>0){
+        
+                Swal.fire({
+                  title: 'Success!',
+                  text: 'Toy Info Updated',
+                  icon: 'success',
+                  confirmButtonText: 'Cool'
+                })
+                
+              }
+        })
+
     }
     return (
         <div className="bg-gray-300">
