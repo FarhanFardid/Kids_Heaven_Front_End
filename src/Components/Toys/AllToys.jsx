@@ -7,7 +7,7 @@ const AllToys = () => {
     console.log(storedToys);
     return (
         <div className="bg-violet-300">
-            <h3 className="text-4xl text-center font-bold text-yellow-700 p-3">All Available Toys </h3>
+          <div className="text-center">  <h3 className="text-4xl text-center font-bold text-yellow-700 p-3">All Available Toys </h3><input type="text" placeholder="Search Toy Name " className="input input-bordered w-full max-w-xs my-3 " /></div>
             <div className="overflow-x-auto w-full">
   <table className="table w-full">
     {/* head */}
