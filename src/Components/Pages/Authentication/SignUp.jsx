@@ -6,11 +6,12 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useTitle from "../../Hooks/useTitle";
 
 
 const SignUp = () => {
  
-  
+  useTitle("SignUp")
   const navigate= useNavigate();
   const {createUser,updateUser,googleSign} = useContext(AuthContext);
     const signUpHandle = event =>{

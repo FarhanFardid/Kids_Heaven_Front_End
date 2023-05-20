@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { FaArrowCircleUp } from "react-icons/fa";
 
+
 const MyToyRows = ({toy,handleDelete}) => {
+ 
     const{_id,sellerName,toyName,image,price,quantity,subCategory} =toy;
     return (
         <tr className="p-2">

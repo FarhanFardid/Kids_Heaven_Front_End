@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import errorImg from '../../../assets/Error/error.jpg'
+import useTitle from '../../Hooks/useTitle';
 
 const Error = () => {
+    useTitle("Error")
     return (
         <div className='w-full h-full p-16 bg-purple-300 relative'>
             <img src={errorImg} alt="error 404" className='w-full h-[600px] rounded-xl'  />

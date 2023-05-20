@@ -6,9 +6,11 @@ import logImg from '../../../assets/animals/Banner/banner-6.png'
 import { useContext } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { toast } from 'react-toastify';
+import useTitle from '../../Hooks/useTitle';
 
 
 const Login = () => {
+  useTitle('Login')
   const {googleSign,signInUser} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
