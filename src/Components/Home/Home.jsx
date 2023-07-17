@@ -1,6 +1,7 @@
 import useTitle from "../Hooks/useTitle";
 import AboutUs from "./AboutUs";
 import CategoryTab from "./CategoryTab";
+import Dinosaurs from "./Dinosaurs";
 
 import Gallery from "./Gallery";
 import Review from "./Review";
@@ -13,6 +14,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <Gallery></Gallery>
+            <Dinosaurs></Dinosaurs>
             <CategoryTab></CategoryTab>
             <AboutUs></AboutUs>
             <Review></Review>

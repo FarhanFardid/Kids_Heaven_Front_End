@@ -95,8 +95,8 @@ const Navigation = () => {
          {
                 user? <>    <Tooltip title={user?.displayName}>
                 <img src={user?.photoURL} alt="User profile" className='md:w-12 md:h-12 w-8 h-8 rounded-full mr-3' />
-              </Tooltip> <Link ><button className="btn btn-xs md:btn-lg bg-red-700" onClick={handleLogout}>Logout</button></Link> </>:
-                <Link to="/login"><button className="btn bg-red-700 hover:bg-blue-700" >Login</button></Link>
+              </Tooltip> <Link ><button className="btn btn-xs md:btn-md bg-red-700" onClick={handleLogout}>Logout</button></Link> </>:
+                <Link to="/login"><button className="btn btn-xs md:btn-md  bg-red-700 hover:bg-blue-700" >Login</button></Link>
                }
               
               </div>

@@ -34,15 +34,15 @@ const CategoryTab = () => {
         <>
         <h3 className='md:text-4xl text-lg text-center font-bold text-purple-900 md:py-6 py-1'>Shop By Category</h3>
       
-        <Tabs className="md:p-10 bg-gray-200 md:m-5 rounded-lg p-1 m-1">
+        <Tabs className="md:p-10 bg-gray-200 md:m-3 rounded-lg p-1 m-1">
     <TabList>
-      <Tab style={{"backgroundColor": "antiquewhite", "fontWeight":"bold", "color":"black"}} >Lion </Tab>
-      <Tab style={{"backgroundColor": "red", "fontWeight":"bold", "color":"white"}}>Dinosaur</Tab>
+      <Tab style={{"backgroundColor": "blueviolet", "fontWeight":"bold", "color":"white"}} >Lion </Tab>
+      <Tab style={{"backgroundColor": "purple", "fontWeight":"bold", "color":"white"}}>Dinosaur</Tab>
       <Tab style={{"backgroundColor": "black", "fontWeight":"bold", "color":"white"}}>Bear</Tab>
     </TabList>
 
     <TabPanel >
-        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-2 gap-1">
+        <div className="grid md:grid-cols-3 grid-cols-2 md:gap-2 gap-1">
         {
             lions.map(lion=> <CategoryCard key={lion._id} value={lion}></CategoryCard>)
         }
@@ -52,14 +52,14 @@ const CategoryTab = () => {
 
     </TabPanel>
     <TabPanel>
-    <div className="grid md:grid-cols-3 grid-cols-1 md:gap-2 gap-1">
+    <div className="grid md:grid-cols-3 grid-cols-2 md:gap-2 gap-1">
         {
             dinosaurs.map(dino=> <CategoryCard key={dino._id} value={dino}></CategoryCard>)
         }
         </div>
     </TabPanel>
     <TabPanel>
-    <div className="grid md:grid-cols-3 grid-cols-1 md:gap-2 gap-1">
+    <div className="grid md:grid-cols-3 grid-cols-2 md:gap-2 gap-1">
         {
             bears.map(bear=> <CategoryCard key={bear._id} value={bear}></CategoryCard>)
         }
