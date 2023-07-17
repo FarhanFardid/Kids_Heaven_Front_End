@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icon
 const Footer = () => {
     
           return (
-            <footer className="footer bg-slate-900 md:p-12 p-5 text-white  ">
+            <footer className="footer bg-black md:p-12 p-5 text-white  ">
               <div className="footer__logo">
                 <img src={logo} className='w-12 h-12 rounded-full mx-auto' alt="Kids Heaven Logo" />
                 <h2 className='text-lg font-bold text-purple-300'>Kids Heaven</h2>

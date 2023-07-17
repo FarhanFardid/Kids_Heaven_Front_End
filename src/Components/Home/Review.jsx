@@ -6,7 +6,7 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Review = () => {
     return (
-        <div className='bg-slate-300'>
+        <div className='bg-purple-200'>
           <h3 className='md:text-4xl text-lg text-center font-bold text-red-700 md:pt-6 pt-1'>Frequently Asked Questions (FAQ)</h3>
           <div className='md:p-24 p-4 '>
           <Accordion >

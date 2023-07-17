@@ -34,7 +34,7 @@ const CategoryTab = () => {
         <>
         <h3 className='md:text-4xl text-lg text-center font-bold text-purple-900 md:py-6 py-1'>Shop By Category</h3>
       
-        <Tabs className="md:p-10 bg-gray-200 md:m-3 rounded-lg p-1 m-1">
+        <Tabs className="md:p-10 bg-purple-300 md:m-3 rounded-lg p-1 m-1">
     <TabList>
       <Tab style={{"backgroundColor": "blueviolet", "fontWeight":"bold", "color":"white"}} >Lion </Tab>
       <Tab style={{"backgroundColor": "purple", "fontWeight":"bold", "color":"white"}}>Dinosaur</Tab>

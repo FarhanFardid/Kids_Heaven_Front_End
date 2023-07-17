@@ -4,6 +4,7 @@ import CategoryTab from "./CategoryTab";
 import Dinosaurs from "./Dinosaurs";
 
 import Gallery from "./Gallery";
+import Info from "./Info";
 import Review from "./Review";
 import Slider from "./Slider";
 
@@ -13,10 +14,11 @@ const Home = () => {
     return (
         <div>
             <Slider></Slider>
-            <Gallery></Gallery>
+            <Info></Info>
             <Dinosaurs></Dinosaurs>
             <CategoryTab></CategoryTab>
             <AboutUs></AboutUs>
+            <Gallery></Gallery>  
             <Review></Review>
             
         </div>

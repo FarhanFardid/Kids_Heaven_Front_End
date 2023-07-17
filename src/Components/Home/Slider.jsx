@@ -6,7 +6,7 @@ const Slider = () => {
     return (
         <div className="carousel w-full md:h-[650px] h-[250px] ">
         <div id="slide1" className="carousel-item relative w-full h-full  ">
-          <img src={banner3} className="w-full  rounded-xl h-full" />
+          <img src={banner3} className="w-full  rounded h-full" />
           <div className="absolute h-full flex items-center  left-0 top-0  rounded-xl bg-gradient-to-r from-[#2e284f] to-[rgba(20, 20, 20, 0)]">
             <div className='text-white md:space-y-7 space-y-1 md:pl-12 pl-3 md:w-2/3 w-4/5 md:h-full md:pt-44  '>
                 <h2 className='md:text-5xl text-lg text-red-600 md:p-2 p-1 font-bold'>Bringing the Animal Kingdom to Your Doorstep...</h2>

@@ -15,7 +15,7 @@ const CategoryCard = (props) => {
           <p className="font-bold md:text-lg text-xs" >price : {toy.price}</p>
           
           <div className="card-actions">
-           <Link to={`/toyDetails/${toy._id}`}><button className="btn md:btn-sm btn-xs bg-purple-700">View Details</button></Link> 
+           <Link to={`/toyDetails/${toy._id}`}><button className="btn md:btn-sm btn-xs bg-red-700">View Details</button></Link> 
           </div>
         </div>
       </div>
