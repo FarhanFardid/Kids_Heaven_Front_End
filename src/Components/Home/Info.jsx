@@ -1,4 +1,4 @@
-import infoPic from '../../assets/animals/Banner/banner-8.png'
+import infoPic from '../../assets/animals/Banner/banner-8.jpg'
 
 const Info = () => {
     return (

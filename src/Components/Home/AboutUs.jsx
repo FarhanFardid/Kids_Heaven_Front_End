@@ -1,4 +1,4 @@
-import aboutImg from '../../assets/animals/Banner/banner-9.png'
+import aboutImg from '../../assets/animals/Banner/banner-9.jpg'
 
 const AboutUs = () => {
     return (

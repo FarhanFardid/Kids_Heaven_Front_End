@@ -1,6 +1,6 @@
-import banner1 from '../../assets/animals/Banner/banner-1.png'
-import banner2 from '../../assets/animals/Banner/banner-10.png'
-import banner3 from '../../assets/animals/Banner/banner-7.png'
+import banner1 from '../../assets/animals/Banner/banner-1.jpg'
+import banner2 from '../../assets/animals/Banner/banner-10.jpg'
+import banner3 from '../../assets/animals/Banner/banner-7.jpg'
 
 const Slider = () => {
     return (

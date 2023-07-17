@@ -1,4 +1,4 @@
-import Trex from '../../../src/assets/animals/Banner/banner-5.png'
+import Trex from '../../../src/assets/animals/Banner/banner-5.jpg'
 
 const Dinosaurs = () => {
     return (
