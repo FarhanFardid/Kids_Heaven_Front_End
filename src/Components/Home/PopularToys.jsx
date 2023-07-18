@@ -26,47 +26,47 @@ const PopularToys = () => {
         <div className="keen-slider__slide number-slide1">
           <>
             {" "}
-            <p className="absolute top-3 text-red-600 text-2xl">Polar Bear</p>
-            <img src={bear} alt="bear" />
+            <p className="absolute top-3 text-red-600 md:text-2xl text-sm">Polar Bear</p>
+            <img src={bear} alt="bear" className="w-full md:h-full h-3/5" />
           </>
         </div>
         <div className="keen-slider__slide number-slide2">
           <>
             {" "}
-            <p className="absolute top-3 text-red-600 text-2xl">
+            <p className="absolute top-3 text-red-600 md:text-2xl text-sm">
               Trex Dinosaur
             </p>
-            <img src={dinosaur} alt="dinosaur" />
+            <img src={dinosaur} alt="dinosaur" className="w-full md:h-full h-3/5" />
           </>
         </div>
         <div className="keen-slider__slide number-slide3">
           <>
             {" "}
-            <p className="absolute top-3 text-red-600 text-2xl">Unicorn</p>
-            <img src={Unicorn} alt="unicorn" />
+            <p className="absolute top-3 text-red-600 md:text-2xl text-sm">Unicorn</p>
+            <img src={Unicorn} alt="unicorn" className="w-full md:h-full h-3/5" />
           </>
         </div>
         <div className="keen-slider__slide number-slide4">
           {" "}
           <>
             {" "}
-            <p className="absolute top-3 text-red-600 text-2xl">Grisly Bear</p>
-            <img src={bear2} alt="bear2" />
+            <p className="absolute top-3 text-red-600 md:text-2xl text-sm">Grisly Bear</p>
+            <img src={bear2} alt="bear2" className="w-full md:h-full h-3/5" />
           </>{" "}
         </div>
         <div className="keen-slider__slide number-slide5">
           <>
             {" "}
-            <p className="absolute top-3 text-red-600 text-2xl">Combo </p>
-            <img src={gal2} alt="gallery2" />
+            <p className="absolute top-3 text-red-600 md:text-2xl text-sm">Combo </p>
+            <img src={gal2} alt="gallery2" className="w-full md:h-full h-3/5"/>
           </>{" "}
         </div>
         <div className="keen-slider__slide number-slide6">
           {" "}
           <>
             {" "}
-            <p className="absolute top-3 text-red-600 text-2xl">Lion</p>
-            <img src={lion} alt="Lions" />
+            <p className="absolute top-3 text-red-600 md:text-2xl text-sm">Lion</p>
+            <img src={lion} alt="Lions" className="w-full md:h-full h-3/5" />
           </>
         </div>
       </div>
