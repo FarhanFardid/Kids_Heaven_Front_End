@@ -3,7 +3,7 @@
 ### Live Site Link: [https://kids-heaven-client.web.app/]
 
 # Kids Heaven
-## Welcome to Kids Heaven, your ultimate destination for exploring a wide variety of toys! This toy website provides users with an immersive experience similar to browsing through a real toy shop. With Firebase authentication, users can sign up and log in securely, gaining access to all available toys. Users can also perform user-specific CRUD operations, including adding, updating, and deleting toys. Additionally, toys are categorized based on their category for easy navigation and user can serach for toys by entering a toy name in the search bar.
+## Welcome to Kids Heaven, a full Stack (MERN) Toy shop website. It is your ultimate destination for exploring a wide variety of toys. This toy website provides users with an immersive experience similar to browsing through a real toy shop. With Firebase authentication, users can sign up and log in securely, gaining access to all available toys. Users can also perform user-specific CRUD operations, including adding, updating, and deleting toys. Additionally, toys are categorized based on their category for easy navigation and user can serach for toys by entering a toy name in the search bar.
 
 ### Features:
 i. Firebase Authentication: Secure user authentication system provided by Firebase.
